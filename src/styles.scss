@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+:root {
+    --main-primary-color: rgb(103, 58, 183);
+
+    --man-placeholder: url("https://hungrygen.com/wp-content/uploads/2019/11/placeholder-male-square.png");
+    --woman-placeholder: url("https://st3.depositphotos.com/9998432/13335/v/600/depositphotos_133351974-stock-illustration-default-placeholder-woman.jpg");
+}

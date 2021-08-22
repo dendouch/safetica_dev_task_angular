@@ -1,0 +1,64 @@
+table {
+    min-width: 600px;
+    width: 100%;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.name-column {
+    width: 60%;
+}
+
+.year-column {
+    width: 25%;
+}
+
+.name-column:hover {
+    cursor: pointer;
+}
+
+.detail-column {
+    width: 15%;
+    text-align: center;
+}
+
+.loading-spinner {
+    margin: auto;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.paginator-wrap {
+    text-align-last: end;
+}
+
+.row {
+    background-color: white;
+}
+
+.row .name-column,
+.row .year-column {
+    color: black;
+}
+
+.row:hover {
+    background-color: white;
+}
+
+.row:hover .name-column,
+.row:hover .year-column {
+    font-weight: bold;
+}
+
+.row:active .name-column,
+.row:active .year-column {
+    color: white;
+    font-weight: normal;
+}
+
+.row:active {
+    background-color: var(--main-primary-color);
+}

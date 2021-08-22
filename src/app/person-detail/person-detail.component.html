@@ -1,0 +1,30 @@
+<mat-card class="example-card" *ngIf="!loading">
+    <mat-card-header>
+        <mat-card-title
+            ><b>{{ personDetailed.name }}</b></mat-card-title
+        >
+        <mat-card-subtitle>Character detail</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="getPlaceholderSource()" />
+    <!-- 
+        https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css
+        https://codepen.io/sosuke/pen/Pjoqqp
+        <img mat-card-image src="../../assets/man-skin.png"> -->
+    <mat-card-content>
+        <div class="row">
+            <div class="column">
+                <p><b>Homeworld: </b>{{ personHomeworld.name }}</p>
+                <p><b>Gender: </b>{{ personDetailed.gender }}</p>
+                <p><b>Birth year: </b>{{ personDetailed.birth_year }}</p>
+            </div>
+            <div class="column">
+                <p><b>Hair color: </b>{{ personDetailed.hair_color }}</p>
+                <p><b>Skin color: </b>{{ personDetailed.skin_color }}</p>
+                <p><b>Eye color: </b>{{ personDetailed.eye_color }}</p>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
+<div style="text-align: left">
+    <button class="nav-btn left" mat-raised-button (click)="this.location.back()">Back</button>
+</div>
